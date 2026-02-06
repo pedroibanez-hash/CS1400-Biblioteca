@@ -4,22 +4,25 @@ El código asegura que lo ingresado sea legible (en minúsculas) y lo compara co
 Al final, muestra un mensaje explicando de dónde es originaria esa comida.
 """
 
-# TODO #1:
-# Imprime un mensaje de bienvenida al programa de comidas de Latinoamérica.
+#Todo #1
+print("Hola, Bienvenidos a la Biblioteca de Comida")
+#TTodo #2
 
-# TODO #2:
-# Muestra al usuario una lista de al menos 5 opciones de comidas para elegir.
-
-# TODO #3:
-# Guarda lo que el usuario escribió en una variable llamada `comida`.
-
-# TODO #4:
-# Convierte lo ingresado a minúsculas para asegurar la comparación correcta.
-
-# TODO #5:
-# Usa una estructura if / elif / else para verificar la comida elegida.
-# Imprime un mensaje con el país de origen para cada comida.
-
+print("1.Hamburguesa \n 2.Pizza \n 3.Ensalada \n 4.Sushi \n 5.Tacos")
+comida = input("Por favor, ingrese el nombre de la comida que desea: ")
+correcta=comida.lower()
+if correcta == "hamburguesa":
+    print("Has seleccionado Hamburguesa y es Americana")
+elif correcta == "pizza":
+    print("Has seleccionado Pizza y es Italiana")
+elif correcta == "ensalada":
+    print("Has seleccionado Ensalada y es Mediterranea")
+elif correcta == "sushi":
+    print("Has seleccionado Sushi y es Japonesa")
+elif correcta == "tacos":
+    print("Has seleccionado Tacos y es Mexicana")   
+else:
+    print("Lo siento, no tenemos esa comida disponible.")
 
 ## Ejemplo de salida esperada:
 """
