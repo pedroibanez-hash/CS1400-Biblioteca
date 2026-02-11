@@ -7,10 +7,18 @@ en una escala de 4.0, y luego calculará el GPA final del semestre basado en los
 
 # Función, con un parametro, para convertir porcentaje a GPA en una escala de 4.0
 def porcentaje_a_gpa(porcentaje):
+    
+    # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar.
     if porcentaje >= 93:
         return 4.0
-    # TODO 1: Completa la función para convertir el porcentaje a GPA usando la escala estándar.
-
+    elif porcentaje >= 83 and porcentaje < 93:
+        return 3.0
+    elif porcentaje >= 73 and porcentaje < 83:
+        return 3.0
+    elif porcentaje >= 73 and porcentaje < 83:
+        return 2.0
+    elif porcentaje >= 63:
+        return 1.0
     else:
         return 0.0
 
