@@ -17,14 +17,14 @@ def porcentaje_a_gpa(porcentaje):
         return 3.0
     elif porcentaje >= 73 and porcentaje < 83:
         return 2.0
-    elif porcentaje >= 63:
+    elif porcentaje <= 63:
         return 1.0
     else:
         return 0.0
 
 # TODO #2: Pedir cuántas materias tiene el usuario, y asignarlo a un variable (recuerda convertirlo a un entero).
 
-
+num_materias = int(input("Hola Buen dia, ¿Cuántas materias tienes asignadas este semestre? "))
 
 # Inicializar variables para acumular puntos y créditos
 total_puntos = 0.0
@@ -45,6 +45,11 @@ for i in range(num_materias):
 # de lo contrario muestra un mensaje indicando que no se ingresaron materias válidas.
 # Si no, imprimir un mensaje indicando que no se ingresaron materias válidas o algo similar.
 
+if total_creditos > 0:
+    gpa_final = total_puntos / total_creditos
+    print(f"Tu GPA estimado para el semestre es: {gpa_final:.2f}")
+else:
+    print("No se ingresaron materias válidas.")
 # TODO #4: En que otra situacion podrias usar una funcion como esta?
 # 
 # 
