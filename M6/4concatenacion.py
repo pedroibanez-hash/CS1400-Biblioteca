@@ -44,7 +44,7 @@ nombre_completo = nombre + " " + apellido
 # TODO Tarea 4: Mostrar el resultado con alguna frase como por ejemplo, "Tu nombre completo es  ___ "
 
 print(f"Tu nombre completo es: {nombre_completo}")
-
+#compe
 
 
 # TODO Tarea 5: Crear un ultimo variable, y agruegale más texto concatenado.
