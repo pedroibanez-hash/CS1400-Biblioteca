@@ -10,7 +10,10 @@
 
 # Importaciones necesarias
 import math
-from turtle import make_turtle, forward, left, right, penup, pendown
+import turtle
+#from turtle import make_turtle, forward, left, right, penup, pendown
+ventana = turtle.Screen()
+my_tortugita= turtle.Turtle()
 
 def triangulo(longitud, angulo):
     """
@@ -35,12 +38,12 @@ def triangulo(longitud, angulo):
     # Pista: estás trabajando con dos lados iguales (longitud)
     # y el ángulo central entre ellos.
     # Puedes usar math.sin().
-    base =  # Escribe aquí el cálculo
+    base =  longitud * math.sin(math.pi/2 - angulo_rad) # Escribe aquí el cálculo
     
     # TODO:
     # Calcula el ángulo que debe girar la tortuga en las esquinas
     # para que el triángulo se cierre correctamente.
-    angulo_giro =  # Escribe aquí el cálculo
+    angulo_giro =  120 
 
     # --------------------------------
     # Paso 3: Dibujo del triángulo
@@ -54,8 +57,14 @@ def triangulo(longitud, angulo):
     
     # TODO:
     # Escribe aquí los movimientos necesarios.
-    
-    pass  # ⚠️ Borra esta línea cuando completes el código
+    my_tortugita.forward(longitud)
+    my_tortugita.left(angulo_giro)      
+    my_tortugita.forward(longitud)
+    my_tortugita.left(angulo_giro)      
+    my_tortugita.forward(longitud)
+    my_tortugita.left(angulo_giro)      
+
+   # pass  # ⚠️ Borra esta línea cuando completes el código
 
 
 def dibujar_tarta(n_porciones, longitud):
@@ -75,7 +84,7 @@ def dibujar_tarta(n_porciones, longitud):
     # TODO:
     # Calcula el ángulo central de cada porción.
     # Pista: un círculo completo tiene 360 grados.
-    angulo_porcion =  # Divide 360 entre el número de porciones
+    angulo_porcion = 360/ n_porciones  # Divide 360 entre el número de porciones
     
     # --------------------------------
     # Paso 5: Dibujar todas las porciones
@@ -87,9 +96,9 @@ def dibujar_tarta(n_porciones, longitud):
     # 2. Gire la tortuga el ángulo necesario
     #    para dibujar la siguiente porción.
     
-    # for ...:
-    #     triangulo(...)
-    #     left(...)
+    for i in range(n_porciones):
+         triangulo(longitud, 120)
+         my_tortugita.left(angulo_porcion)
     
     pass  # ⚠️ Borra esta línea cuando completes el código
 
@@ -99,7 +108,7 @@ def dibujar_tarta(n_porciones, longitud):
 # Bloque para probar la función
 # ==================================
 
-make_turtle(height=400, width=600)
+#mymake_turtle(height=400, width=600)
 
 # ----------------------------------
 # Prueba 1

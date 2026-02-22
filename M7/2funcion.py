@@ -24,11 +24,11 @@ def calcular_area_rectangulo(largo, ancho):
       float or int: El área calculada del rectángulo.
     """
     # TODO: Paso 1. Calcula el área. La fórmula es largo * ancho.
-    
+    area_resultado = largo * ancho  # Reemplaza esto con el cálculo del área usando las variables 'largo' y 'ancho'.
 
     # TODO: Paso 2. Devuelve el valor calculado.
     # Reemplaza 'None' con la variable que contiene el área.
-    return None
+    return area_resultado  # Reemplaza esto con la variable que contiene el área
 
 
 # --- Bloque para probar tu función ---
