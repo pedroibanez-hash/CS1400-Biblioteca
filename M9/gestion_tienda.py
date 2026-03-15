@@ -1,44 +1,45 @@
-# gestion_tienda.py
-
-# Este módulo contiene las funciones para gestionar el inventario de la tienda.
-# Crear las 3 funciones que se describen a continuación:
-# Una para agregar un producto, debe recibir inventario, nombre y precio.
-# Esta debe tener un try except ValueError para manejar el error si el precio no es un número.
-# Otra para buscar el precio de un producto, debe recibir inventario y nombre. Utiliza .get()
-# Y una última función para listar todos los productos, debe recibir el inventario.
-# Tener una opcion por si esta vacio el inventario.
-
-# No te olvides de agregar comenantarios a cada función explicando qué hace y cómo funciona.
-
 def agregar_producto(inventario, nombre, precio):
     """
-    Agrega o actualiza un producto en el diccionario.
-    Maneja el error si el precio no es un número.
+    Intenta convertir el precio a número y añadir el producto al inventario.
+    
+    Args:
+        inventario (dict): Diccionario donde se guardan los productos.
+        nombre (str): Nombre del producto.
+        precio (any): Valor que se intentará convertir a float.
+        
+    Returns:
+        bool: True si se agregó con éxito, False si el precio no era válido.
     """
     try:
-        # Convertimos a float para asegurar que sea un número
+        # Intentamos la conversión; si falla, salta directamente al except
         precio_num = float(precio)
         inventario[nombre] = precio_num
         return True
     except ValueError:
-        # Si no se puede convertir a número, devolvemos False
+        # Maneja el error si el usuario ingresa texto en lugar de números
         return False
 
 def buscar_precio(inventario, nombre):
     """
-    Busca un producto y devuelve su precio. 
-    Retorna None si no existe.
+    Busca un producto en el diccionario usando su nombre como llave.
+    
+    Utiliza el método .get() que permite definir un valor por defecto 
+    (None) si la llave no se encuentra, evitando errores de KeyError.
     """
-    # Usamos .get() para evitar que el programa falle si la llave no existe
     return inventario.get(nombre, None)
 
 def listar_productos(inventario):
     """
-    Imprime todos los productos usando un bucle for.
+    Muestra la lista de productos y precios.
+    
+    Verifica si el diccionario tiene elementos. Si está vacío, 
+    notifica al usuario en lugar de mostrar una lista en blanco.
     """
     if not inventario:
-        print("\n> El inventario está vacío.")
+        print("\n[!] El inventario se encuentra actualmente vacío.")
     else:
-        print("\n--- Inventario Actual ---")
+        print("\n--- Lista de Inventario ---")
+        # .items() nos permite iterar sobre llave y valor simultáneamente
         for producto, precio in inventario.items():
-            print(f"• {producto}: ${precio:.2f}")
+            print(f"-> {producto}: ${precio:,.2f}")
+        print("---------------------------")

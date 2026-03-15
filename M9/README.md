@@ -1,4 +1,4 @@
-En este proyecto hay que completar los TODO en el main.py y en el gestion_tienda.py. Luego correr test_tienda.py con el comando python test_tienda.py
+ En este proyecto hay que completar los TODO en el main.py y en el gestion_tienda.py. Luego correr test_tienda.py con el comando python test_tienda.py
 
 Objetivo
 Crear un programa que gestione productos mediante un diccionario. El programa debe permitir añadir, buscar y listar productos, manejando posibles errores del usuario.
