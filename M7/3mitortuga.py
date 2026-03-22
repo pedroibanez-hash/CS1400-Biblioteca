@@ -17,9 +17,18 @@
 # ------------------------------------------
 # Importaciones necesarias
 # ------------------------------------------
-
 #from turtle import make_turtle, forward, left
 import turtle
+
+<<<<<<< HEAD
+#from turtle import make_turtle, forward, left
+import turtle
+=======
+# 1. Iniciar ventana y objeto de tortuga
+ventana = turtle.Screen()
+t = turtle.Turtle() 
+t.speed(3)
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 
 # ------------------------------------------
 # Paso 1: Crear la ventana y la tortuga
@@ -108,6 +117,7 @@ for i in range(4):
 # - Un triángulo tiene 3 lados.
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
+<<<<<<< HEAD
 
 for i in range(3):
    my_tortugita.forward(100)
@@ -115,3 +125,6 @@ for i in range(3):
 
 
 turtle.done()
+=======
+ventana.exitonclick()
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56

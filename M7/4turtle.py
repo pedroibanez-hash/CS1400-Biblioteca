@@ -10,10 +10,22 @@
 
 # Importaciones necesarias
 import math
+<<<<<<< HEAD
 import turtle
 #from turtle import make_turtle, forward, left, right, penup, pendown
 ventana = turtle.Screen()
 my_tortugita= turtle.Turtle()
+=======
+#from turtle import make_turtle, forward, left, right, penup, pendown
+import turtle
+
+# 1. Iniciar ventana y objeto de tortuga
+window = turtle.Screen()
+t = turtle.Turtle() 
+t.speed(3)
+
+
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 
 def triangulo(longitud, angulo):
     """
@@ -90,15 +102,28 @@ def dibujar_tarta(n_porciones, longitud):
     # Paso 5: Dibujar todas las porciones
     # --------------------------------
     
+    
     # TODO:
     # Escribe un bucle for que:
     # 1. Llame a la función triangulo(...)
     # 2. Gire la tortuga el ángulo necesario
     #    para dibujar la siguiente porción.
     
+<<<<<<< HEAD
     for i in range(n_porciones):
          triangulo(longitud, 120)
          my_tortugita.left(angulo_porcion)
+=======
+    ###### for _ in range(n_porciones):
+        # triangulo(...)
+        # turtle.left(...)
+        pass
+########
+
+    # for ...:
+    #     triangulo(...)
+    #     left(...)
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
     
     pass  # ⚠️ Borra esta línea cuando completes el código
 
@@ -107,8 +132,14 @@ def dibujar_tarta(n_porciones, longitud):
 # ==================================
 # Bloque para probar la función
 # ==================================
+####turtle.speed(5) # Ajusta la velocidad (1-10)
+#####turtle.shape("turtle")
 
+<<<<<<< HEAD
 #mymake_turtle(height=400, width=600)
+=======
+#make_turtle(height=400, width=600)
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 
 # ----------------------------------
 # Prueba 1
@@ -124,7 +155,8 @@ dibujar_tarta(5, 80)
 # 2. Muévete a otra posición.
 # 3. Baja el lápiz (pendown()).
 # 4. Dibuja otra tarta con diferentes valores.
-
+#### turtle.penup()
+#### turtle.goto()
 
 # ----------------------------------
 # Prueba 2
@@ -132,3 +164,4 @@ dibujar_tarta(5, 80)
 
 print("Dibujando una tarta de 8 porciones...")
 dibujar_tarta(8, 60)
+####turtle.done()
