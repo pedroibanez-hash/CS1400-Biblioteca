@@ -11,11 +11,14 @@
 # Importaciones necesarias
 import math
 <<<<<<< HEAD
+<<<<<<< HEAD
 import turtle
 #from turtle import make_turtle, forward, left, right, penup, pendown
 ventana = turtle.Screen()
 my_tortugita= turtle.Turtle()
 =======
+=======
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 #from turtle import make_turtle, forward, left, right, penup, pendown
 import turtle
 
@@ -25,6 +28,9 @@ t = turtle.Turtle()
 t.speed(3)
 
 
+<<<<<<< HEAD
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
+=======
 >>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 
 def triangulo(longitud, angulo):
@@ -110,10 +116,13 @@ def dibujar_tarta(n_porciones, longitud):
     #    para dibujar la siguiente porción.
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     for i in range(n_porciones):
          triangulo(longitud, 120)
          my_tortugita.left(angulo_porcion)
 =======
+=======
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
     ###### for _ in range(n_porciones):
         # triangulo(...)
         # turtle.left(...)
@@ -136,7 +145,11 @@ def dibujar_tarta(n_porciones, longitud):
 #####turtle.shape("turtle")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #mymake_turtle(height=400, width=600)
+=======
+#make_turtle(height=400, width=600)
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
 =======
 #make_turtle(height=400, width=600)
 >>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56

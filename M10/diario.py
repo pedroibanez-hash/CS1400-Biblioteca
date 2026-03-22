@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def menu():
     print("\n--- Diario Digital ---")
     print("1. Escribir una entrada")
@@ -32,3 +33,21 @@ while True:
         
     else:
         print("Opción no válida. Por favor, intenta de nuevo.")
+=======
+# --- Diaro de      Digital ---
+
+# Aqui tu funcion menu()
+
+while True:
+    opcion = menu()
+
+    #Aqui tu if/elif/elif/else statement con las opciones del menu
+    
+    # Entrada de datos
+    # Guardar en archivo
+    # Leer el archivo 
+
+    
+    # Salir de tu ultimo elif con un break
+    # else solo para mostrar al usuario que no funciono lo que intentaron ingresar.
+>>>>>>> 4138345bb5449dc622c715ef49c8dae616a71e56
