@@ -25,9 +25,8 @@ class Gato:
 tu_gato = Gato("Luna", 2)
 print(f"{tu_gato.nombre} dice: {tu_gato.maullar()}")
 
-"""4. Clase propia (Ejercicio para el alumno)"""
-# Ejemplo de lo que podrían escribir:
-class Lamp:
+"""4. Clase propia (Ejemplo Lámpara)"""
+class Lampara:
     def __init__(self):
         self.encendida = False
 
@@ -36,7 +35,7 @@ class Lamp:
         estado = "encendida" if self.encendida else "apagada"
         print(f"La lámpara está {estado}")
 
-mi_lampara = Lamp()
+mi_lampara = Lampara()
 mi_lampara.interruptor()
 
 """5. Tiempo (Manejo de I/O y Lógica)"""
