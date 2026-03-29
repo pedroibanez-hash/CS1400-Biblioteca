@@ -12,11 +12,14 @@ def ejecutar_demo():
     # 3. Construcción (Usando markov_engine.py)
     modelo = construir_modelo(palabras)
     
-    # 4. Generación
+    # 4. Generación.
     print("--- Generador de Texto Markov ---")
     resultado = generar_texto(modelo, "pez", 5)
     
     print(f"Resultado: {resultado}")
 
 # TODO Paso 6.
-# Llama a ejecutar_demo() dentro de un bloque if __name__ == "__main__":
+# Llama a ejecutar_demo() dentro de un bloque 
+# if __name__ == "__main__":
+if __name__ == "__main__":
+    ejecutar_demo()

@@ -1,4 +1,3 @@
-# markov.py
 import random
 
 def construir_modelo(palabras):
@@ -22,12 +21,22 @@ def generar_texto(modelo, palabra_inicial, longitud):
     """
     Genera una secuencia de palabras basada en las probabilidades del modelo.
     """
-    # TODO: Paso 4. Inicializa la frase con la palabra inicial
+    # Paso 4. Inicializa la frase con la palabra inicial
+    frase_generada = [palabra_inicial]
+    palabra_actual = palabra_inicial
 
-
-    # TODO: Paso 5. Bucle for con un if/else para generar palabras hasta
-    #  alcanzar la longitud deseada. 
-    
-
-    # Unir y devolver
+    # Paso 5. Bucle for con un if/else para generar palabras (IDENTADO)
+    for _ in range(longitud - 1):
+        # Verificamos si la palabra actual existe en nuestro modelo
+        if palabra_actual in modelo:
+            # Elegimos una palabra al azar de las opciones disponibles
+            palabra_siguiente = random.choice(modelo[palabra_actual])
+            frase_generada.append(palabra_siguiente)
+            # Actualizamos para la siguiente iteración
+            palabra_actual = palabra_siguiente
+        else:
+            # Si llegamos a una palabra que no tiene "seguidoras", nos detenemos
+            break
+            
+    # Unir y devolver (IDENTADO dentro de la función)
     return " ".join(frase_generada)
