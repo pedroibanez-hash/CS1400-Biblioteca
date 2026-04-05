@@ -1,0 +1,31 @@
+# --- Entornos Virtuales (Fundamentales) ---
+# No queremos subir las 2,000 librerías de la carpeta .venv
+.venv/
+venv/
+env/
+ENV/
+
+# --- Archivos de Configuración Secreta ---
+# AQUÍ ES DONDE ESTÁN LAS API KEYS. ¡NUNCA SUBIR ESTO!
+.env
+
+# --- Caché de Python ---
+# Archivos temporales que Python crea para correr más rápido
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Archivos de Visual Studio Code ---
+# Configuraciones personales de tu editor que no le sirven a otros
+.vscode/
+
+# --- Distribución y Construcción ---
+# Archivos que se crean al empaquetar el proyecto
+dist/
+build/
+*.egg-info/
+
+# --- Sistema Operativo ---
+# Basura que genera Windows o Mac automáticamente
+.DS_Store
+Thumbs.db
