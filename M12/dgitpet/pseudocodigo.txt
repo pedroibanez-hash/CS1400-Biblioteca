@@ -1,0 +1,66 @@
+=============================================
+PSEUDOCÓDIGO - Mascota Virtual
+=============================================
+
+INICIO
+
+  --- Definir la clase MascotaVirtual ---
+  CLASE MascotaVirtual:
+    CONSTRUCTOR(nombre):
+      Asignar nombre a la mascota
+      Establecer felicidad = 100
+      Establecer hambre = 100
+      Establecer salud = 100
+
+    MÉTODO jugar():
+      Aumentar felicidad en 10 (máximo 100)
+      Disminuir hambre en 5 (mínimo 0)
+      Disminuir salud en 3 (mínimo 0)
+      Mostrar mensaje de que jugó
+
+    MÉTODO alimentar():
+      Aumentar hambre en 15 (máximo 100)
+      Aumentar felicidad en 3 (máximo 100)
+      Aumentar salud en 2 (máximo 100)
+      Mostrar mensaje de que comió
+
+    MÉTODO pasear():
+      Aumentar salud en 10 (máximo 100)
+      Aumentar felicidad en 5 (máximo 100)
+      Disminuir hambre en 8 (mínimo 0)
+      Mostrar mensaje de que paseó
+
+    MÉTODO pasar_tiempo():
+      Disminuir felicidad en 3
+      Disminuir hambre en 4
+      Disminuir salud en 2
+
+    MÉTODO esta_viva():
+      RETORNAR verdadero SI felicidad > 0 Y hambre > 0 Y salud > 0
+
+    MÉTODO mostrar_estado():
+      Imprimir felicidad, hambre y salud
+
+  --- Programa principal ---
+  Pedir al usuario el nombre de la mascota
+  Crear objeto MascotaVirtual con ese nombre
+
+  MIENTRAS la mascota esté viva:
+    Mostrar estado actual
+    Mostrar menú (1-Jugar, 2-Alimentar, 3-Pasear, 4-Salir)
+    Leer opción del usuario
+
+    SI opción es 1: llamar jugar()
+    SI opción es 2: llamar alimentar()
+    SI opción es 3: llamar pasear()
+    SI opción es 4: despedirse y SALIR del bucle
+    SI NO: mostrar error y volver al inicio del bucle
+
+    Llamar pasar_tiempo() para simular desgaste natural
+
+  SI la mascota no está viva:
+    Mostrar mensaje de que la mascota no sobrevivió
+
+  Mostrar mensaje de despedida
+
+FIN
